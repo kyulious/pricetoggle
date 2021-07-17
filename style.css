@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('images/bg-top.svg'), url('images/bg-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 105% 30%, 0% 200%;
+    background-color: rgb(233, 233, 233);
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+    padding: 6.4rem 6.8rem 0rem;
+}
+.pricing {
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+.pricing > h1 {
+  line-height: 3.9rem;
+  margin-bottom: 4rem;
+  font-size: 35px;
+  font-weight: bolder;
+  
+}
+
+.pricing__toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing__toggler > span {
+  opacity: 0.5;
+  line-height: 2.8rem;
+  font-weight: bolder;
+}
+
+/* TOGGLE COMPONENT */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(141, 123, 240);
+  transition: .4s;
+  border-radius: 16px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider:before {
+  transform: translateX(23px);
+}
+
+
+.main{
+    top: -40px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 75px;
+}
+
+/* basic box */
+.main .basic{
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 150px;
+    right: 60px;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+}
+.basic #title1{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+}
+.basic #price1{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 40px;
+    font-size: 60px;
+}
+.basic #storage1{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid hsla(232, 13%, 49%, 25%);
+    border-bottom: 1px solid hsla(232, 13%, 49%, 25%);
+    font-size: 17px;
+}
+.basic #allow1{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid hsla(232, 13%, 49%, 25%);
+    border-bottom: 1px solid hsla(232, 13%, 49%, 25%);
+    font-size: 17px;
+}
+
+.basic #gb1{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid hsla(232, 13%, 49%, 25%);
+    border-bottom: 1px solid hsla(232, 13%, 49%, 25%);
+    font-size: 17px;
+}
+
+.basic #btn1{
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 90px;
+    left: 25px;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient( to right, rgb(123, 132, 247), rgb(124, 90, 204));
+}
+
+/* pro box */
+.main .pro{
+    border: 1px solid rgb(170, 141, 248);
+    background: linear-gradient(to right, rgb(172, 170, 247), rgb(104, 113, 240));
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    color: #fff;
+    top: 125px;
+    align-items: center;
+    justify-content: center;
+    right: 65px;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+}
+.pro #title2{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+}
+.pro #price2{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 40px;
+    font-size: 60px;
+}
+.pro #storage2{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 17px;
+}
+.pro #allow2{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 17px;
+}
+
+.pro #gb2{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 17px;
+}
+
+.pro #btn2{
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    height: 35px;
+    color: rgb(104, 67, 190);
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+/* master box */
+.main .master{
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 150px;
+    right: 65px;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+}
+.master #title3{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+}
+.master #price3{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 40px;
+    font-size: 60px;
+}
+.master #storage3{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid hsla(232, 13%, 49%, 25%);
+    border-bottom: 1px solid hsla(232, 13%, 49%, 25%);
+    font-size: 17px;
+}
+.master #allow3{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid hsla(232, 13%, 49%, 25%);
+    border-bottom: 1px solid hsla(232, 13%, 49%, 25%);
+    font-size: 17px;
+}
+
+.master #gb3{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 70px;
+    padding: 1rem 0;
+    border-top: 1px solid hsla(232, 13%, 49%, 25%);
+    border-bottom: 1px solid hsla(232, 13%, 49%, 25%);
+    font-size: 17px;
+}
+
+.master #btn3{
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 90px;
+    left: 25px;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient( to right, rgb(123, 132, 247), rgb(124, 90, 204));
+}
